@@ -27,8 +27,8 @@ in an atomic transactional manner
 3. Select all rows from the voucher table. It should shows empty rows.
 4. Using a terminal shell, run the following codes:
    ```bash
-   for i in `seq 1 1000`; do \
-     curl -s http://localhost:8080/voucher/request?userid=$[ $RANDOM % 100 ] >/dev/null & \
+   for i in `seq 1 1000`; do
+     curl -s http://localhost:8080/voucher/request?userid=$[ $RANDOM % 100 ] >/dev/null &
    done
    ```
    This will ensure there are 1000 concurrent processes trying to obtain vouchers from the system.
