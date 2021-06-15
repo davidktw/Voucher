@@ -13,8 +13,8 @@ Just a demonstration project
 ```
 
 ## How to access H2 database console
-Open browser at `http://localhost:8080/h2-console`
-Login using credentials `username=demo`, `password=demo`
+Open browser at [http://localhost:8080/h2-console](http://localhost:8080/h2-console).
+Login using credentials username `demo`, password `demo`.
 
 ## Objective to this demonstration
 It is to demonstrate how to use Pessimistic lock on a locking table
